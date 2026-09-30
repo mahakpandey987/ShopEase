@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Checkout</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h1>ShopEase</h1>
+
+            <ul id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="pages/register.html">Register</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="checkout-section">
+
+            <h2>Checkout</h2>
+
+
+            <div class="checkout-container">
+
+
+                
+
+                <div class="checkout-form">
+
+                    <h3>Customer Information</h3>
+
+                    <form id="checkout-form" onsubmit="placeOrder(event)">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+
+
+                        <label for="address">
+                            Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            placeholder="Enter your complete address"
+                            required
+                        ></textarea>
+
+
+                        <label for="city">
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Enter your city"
+                            required
+                        >
+
+
+                        <label for="pincode">
+                            PIN Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pincode"
+                            placeholder="Enter PIN code"
+                            required
+                        >
+
+
+                        <h3>Payment Method</h3>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                                checked
+                            >
+                            Cash on Delivery
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="online"
+                            >
+                            Online Payment
+                        </label>
+
+
+                        <button
+                            type="submit"
+                            class="auth-btn"
+                        >
+                            Place Order
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                
+
+                <div class="checkout-summary">
+
+                    <h3>Order Summary</h3>
+
+                    <div id="checkout-items">
+                        
+                    </div>
+
+
+                    <hr>
+
+
+                    <p>
+                        Subtotal:
+                        <span id="checkout-subtotal">
+                            ₹0
+                        </span>
+                    </p>
+
+
+                    <p>
+                        Shipping:
+                        <span id="checkout-shipping">
+                            ₹0
+                        </span>
+                    </p>
+
+
+                    <h3>
+                        Total:
+                        <span id="checkout-total">
+                            ₹0
+                        </span>
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 
+        </p>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
